@@ -1,0 +1,190 @@
+.home {
+    background-image: url(/images/pokemon2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:  100%;
+    border: 5px solid #DD1A1A;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    max-width: 1100px;
+    max-height: 870px;
+    box-shadow: 2px 2px 5px black;;
+    margin: 20px auto;
+}
+
+.home__conteiner{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__img {
+    margin: 15px 0;
+}
+
+.home__img:hover img{
+    transition: transform 300ms ease;
+	transform: rotate(-10deg);
+}
+
+.home__title {
+    font-size: 35px;
+    color: #FE1936;
+    text-shadow: 2px 2px 5px black;
+}
+
+.home__subtitle {
+    font-size: 20px;
+    margin: 3px 0 12px 0;
+    font-weight: bold;
+}
+
+.home__form {
+    background-color: white;
+    margin: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.home__input {
+    border: none;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    color: #FE1936;
+    outline: none;
+    font-size: 15px;
+}
+
+.home__btn {
+    border: none;
+    background-color: #D93F3F;
+    font-size: 15px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.home__btn:hover {
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.418);
+    background-color: #FE1936;
+}
+
+/* Estilos para siguientes dispositivos */
+/* 
+.home__img-trainer {
+    position: absolute;
+    top: 0;
+} */
+
+
+.home__footer{
+    max-width: 1500px;
+    margin: 20px auto;
+}
+
+.home__footer__red {
+    height: 25px;
+    background-color: #DD1A1A;
+    position: relative;
+}
+
+
+.home__footer__black {
+    height: 25px;
+    background-color: #0C0C0C;
+    position: relative;
+}
+
+.home__footer__pokeball{
+    position: absolute;
+    /* right: 34%; */
+    top: -45px;
+    right: 50%;
+    margin-right: -50px;
+    background-color: rgb(255, 255, 255, 1) ;
+    border: 10px solid #0C0C0C;
+    width: 90px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.home__footer__pokeball::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: rgb(33, 33, 33, 1);
+    border: 10px solid #0C0C0C;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 760px){
+    .home__conteiner {
+        padding: 0 0 100px 0;
+    }
+    .home__title {
+        font-size: 65px;
+    }
+    .home__subtitle {
+        font-size: 25px;
+        /* margin: 10px 0 15px 0; */
+    }
+    .home__form {
+        margin: 20px;
+    }
+    .home__input {
+        font-size: 20px;
+    }
+    .home__btn {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .home__footer__red {
+        height: 45px;
+    }
+    .home__footer__black {
+        height: 45px;
+    }
+    .home__img-trainer {
+        position: absolute;
+        top: 165px;
+        left: 37px;
+    }
+}
+
+@media (min-width: 1000px){
+    .home__title {
+        font-size: 83px;
+    }
+    .home__subtitle {
+        font-size: 28px;
+        /* margin: 10px 0 15px 0; */
+    }
+    .home__form {
+        margin: 10px;
+    }
+    .home__input {
+        padding: 0 30px;
+    }
+    .home__btn {
+        padding: 10px 20px;
+    }
+    .home__footer__red {
+        height: 45px;
+    }
+    .home__footer__black {
+        height: 45px;
+    }
+    .home__img-trainer {
+        position: absolute;
+        top: 175px;
+        left: 133px;
+    }
+}
